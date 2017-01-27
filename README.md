@@ -1,2 +1,2 @@
-# CursoAluraJava
-Exercícios resolvidos de alguns cursos de Java do Alura
+﻿# CursoAluraJava
+Exercícios resolvidos de alguns cursos de Java do Alura.

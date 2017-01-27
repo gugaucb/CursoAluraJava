@@ -1,0 +1,4 @@
+java1/target/*
+java1/.project
+java1/.settings
+java1/.classpath
