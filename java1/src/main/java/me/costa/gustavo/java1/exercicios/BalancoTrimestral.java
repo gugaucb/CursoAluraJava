@@ -1,6 +1,10 @@
 package me.costa.gustavo.java1.exercicios;
 
-public class BalancoTrimestral {
+public class BalancoTrimestral implements IExercicio {
+	/* (non-Javadoc)
+	 * @see me.costa.gustavo.java1.exercicios.IExercicio#executarExercicio()
+	 */
+	@Override
 	public void executarExercicio(){
 		int gastosJaneiro = 15000;
 		int gastosFevereiro = 23000;
