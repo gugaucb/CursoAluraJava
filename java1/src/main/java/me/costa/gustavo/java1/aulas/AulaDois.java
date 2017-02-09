@@ -4,6 +4,7 @@ import me.costa.gustavo.java1.exercicios.BalancoTrimestral;
 import me.costa.gustavo.java1.exercicios.Exercicio3;
 import me.costa.gustavo.java1.exercicios.Exercicio4;
 import me.costa.gustavo.java1.exercicios.Exercicio5;
+import me.costa.gustavo.java1.exercicios.Exercicio6;
 import me.costa.gustavo.java1.exercicios.IExercicio;
 import me.costa.gustavo.java1.main.App;
 
@@ -19,6 +20,7 @@ public class AulaDois extends AbstractAula {
 		menu.append("2 - Exercicio 3\n");
 		menu.append("3 - Exercicio 4\n");
 		menu.append("4 - Exercicio 5\n");
+		menu.append("5 - Exercicio 6\n");
 		menu.append("16 - Retornar Menu Principal\n");
 		menu.append("15 - Sair\n");
 		System.out.println(menu);
@@ -43,6 +45,10 @@ public class AulaDois extends AbstractAula {
 			break;
 		case "4":
 			executar(new Exercicio5());
+			gerarMenu();
+			break;
+		case "5":
+			executar(new Exercicio6());
 			gerarMenu();
 			break;
 		case "15":
