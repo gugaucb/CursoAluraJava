@@ -13,9 +13,11 @@ public class Exercicio6 implements IExercicio {
 
 	}
 
-	private BigDecimal calcularFator(long fator) {
+	public BigDecimal calcularFator(long fator) {
 		BigDecimal temp = new BigDecimal(1);
-		
+		if(fator == 0){
+			return new BigDecimal(1);
+		}
 		for (long j =1 ; j <= fator; j++) {
 			temp = temp.multiply(new BigDecimal(j));
 		}
