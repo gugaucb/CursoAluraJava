@@ -1,4 +1,6 @@
-package me.costa.gustavo.java1.exercicios;
+package me.costa.gustavo.java1.exercicios.aula2;
+
+import me.costa.gustavo.java1.exercicios.IExercicio;
 
 public class Exercicio5 implements IExercicio {
 

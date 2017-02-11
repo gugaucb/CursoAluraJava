@@ -3,6 +3,7 @@ package me.costa.gustavo.java1.exercicios;
 import java.math.BigDecimal;
 
 import junit.framework.Assert;
+import me.costa.gustavo.java1.exercicios.aula2.Exercicio6;
 
 import org.junit.Test;
 

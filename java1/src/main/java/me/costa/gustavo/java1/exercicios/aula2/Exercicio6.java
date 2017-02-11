@@ -1,6 +1,8 @@
-package me.costa.gustavo.java1.exercicios;
+package me.costa.gustavo.java1.exercicios.aula2;
 
 import java.math.BigDecimal;
+
+import me.costa.gustavo.java1.exercicios.IExercicio;
 
 public class Exercicio6 implements IExercicio {
 

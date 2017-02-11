@@ -1,4 +1,6 @@
-package me.costa.gustavo.java1.exercicios;
+package me.costa.gustavo.java1.exercicios.aula2;
+
+import me.costa.gustavo.java1.exercicios.IExercicio;
 
 public class BalancoTrimestral implements IExercicio {
 	/* (non-Javadoc)
@@ -13,6 +15,6 @@ public class BalancoTrimestral implements IExercicio {
 		int gastosTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
 		int mediaMensal = gastosTrimestre/3;
 		System.out.println("Gasto do trimestre: R$" +gastosTrimestre);
-		System.out.println("Valor da média mensal = " + mediaMensal);
+		System.out.println("Valor da mï¿½dia mensal = " + mediaMensal);
 	}
 }
