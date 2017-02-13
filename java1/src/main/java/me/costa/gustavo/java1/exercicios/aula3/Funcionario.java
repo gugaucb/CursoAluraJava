@@ -1,8 +1,7 @@
 package me.costa.gustavo.java1.exercicios.aula3;
 
-
-
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /***Modele um funcionário. Ele deve ter o nome do funcionário, o departamento onde trabalha, 
  * seu salário (double), a data de entrada no banco (String) e seu RG (String).
@@ -17,18 +16,53 @@ package me.costa.gustavo.java1.exercicios.aula3;
 
 public class Funcionario {
 	private double salario=100;
-	private String dataEntradaBanco;
+	private Date dataEntradaBanco;
 	private String RG;
+	private String nome;
 	
 	public Funcionario() {
 		super();
 	}
 	
-	public Funcionario(double salario, String dataEntradaBanco, String rG) {
+	public Funcionario(String nome, double salario, Date dataEntradaBanco, String rG) {
 		super();
 		this.salario = salario;
 		this.dataEntradaBanco = dataEntradaBanco;
 		RG = rG;
+	}
+
+	
+	
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+
+	public Date getDataEntradaBanco() {
+		return dataEntradaBanco;
+	}
+
+	public void setDataEntradaBanco(Date dataEntradaBanco) {
+		this.dataEntradaBanco = dataEntradaBanco;
+	}
+
+	public String getRG() {
+		return RG;
+	}
+
+	public void setRG(String rG) {
+		RG = rG;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public double recebeAumento(double aumento){
@@ -50,7 +84,7 @@ public class Funcionario {
 		
 		builder.append("Salario: R$"+this.salario+"\n");
 		builder.append("RG: "+this.RG+"\n");
-		builder.append("Data de Entrada no Banco: "+this.dataEntradaBanco+"\n");
+		builder.append("Data de Entrada no Banco: "+new SimpleDateFormat("dd/MM/yyyy").format(this.dataEntradaBanco)+"\n");
 		return builder.toString();
 	}
 	

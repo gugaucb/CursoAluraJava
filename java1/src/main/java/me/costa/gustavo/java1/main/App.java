@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import me.costa.gustavo.java1.aulas.AulaDois;
+import me.costa.gustavo.java1.aulas.AulaTres;
 
 /**
  * Classe principal que será executada ao iniciar o jar.
@@ -21,6 +22,11 @@ public class App {
 		case "1":
 			AulaDois aulaDois = new AulaDois();
 			aulaDois.gerarMenu();
+			principal();
+			break;
+		case "2":
+			AulaTres aulaTres = new AulaTres();
+			aulaTres.gerarMenu();
 			principal();
 			break;
 		case "15":

@@ -1,12 +1,7 @@
 package me.costa.gustavo.java1.aulas;
 
 import me.costa.gustavo.java1.exercicios.IExercicio;
-import me.costa.gustavo.java1.exercicios.aula2.BalancoTrimestral;
-import me.costa.gustavo.java1.exercicios.aula2.Exercicio3;
-import me.costa.gustavo.java1.exercicios.aula2.Exercicio4;
-import me.costa.gustavo.java1.exercicios.aula2.Exercicio5;
-import me.costa.gustavo.java1.exercicios.aula2.Exercicio6;
-import me.costa.gustavo.java1.exercicios.aula2.Exercicio8;
+import me.costa.gustavo.java1.exercicios.aula3.Exercicio1;
 import me.costa.gustavo.java1.main.App;
 
 public class AulaTres extends AbstractAula {
@@ -37,8 +32,10 @@ public class AulaTres extends AbstractAula {
 	private void executaExercicio(String opcaoMenu) {
 		switch (opcaoMenu) {
 		case "1":
+			executar(new me.costa.gustavo.java1.exercicios.aula3.Exercicio1());
 			break;
 		case "2":
+			executar(new me.costa.gustavo.java1.exercicios.aula3.Exercicio4());
 			break;
 		case "3":
 			break;

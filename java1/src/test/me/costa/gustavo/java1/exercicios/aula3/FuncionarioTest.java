@@ -1,8 +1,8 @@
 package me.costa.gustavo.java1.exercicios.aula3;
 
-import static org.junit.Assert.*;
+import java.util.Calendar;
+import java.util.Date;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import junit.framework.Assert;
@@ -26,7 +26,11 @@ public class FuncionarioTest {
 
 	@Test
 	public void deveRecuperarOsAtributosDoObjetoFuncionario(){
-		Funcionario funcionario = new Funcionario(100.0,"01/01/2017", "12345");
+		Calendar cal = Calendar.getInstance();
+		cal.setTimeInMillis(0);
+		cal.set(2017, 0, 1, 0, 0, 0);
+		Date date = cal.getTime(); // get back a Date object
+		Funcionario funcionario = new Funcionario("Funcionario",100.0,date, "12345");
 		StringBuilder builder = new StringBuilder();
 		builder.append("Salario: R$100.0\n");
 		builder.append("RG: 12345\n");
