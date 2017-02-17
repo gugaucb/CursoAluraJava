@@ -2,16 +2,13 @@ package me.costa.gustavo.java1.aulas;
 
 import java.util.Scanner;
 
+import me.costa.gustavo.java1.exercicios.IExercicio;
 import me.costa.gustavo.java1.main.App;
 
-public class AbstractAula implements IAulas {
+public abstract class AbstractAula implements IAulas {
 
-	@Override
-	public void gerarMenu() {
-		// TODO Auto-generated method stub
-
-	}
-
+	protected abstract void executaExercicio(String opcaoMenu);
+	
 	@Override
 	public String recuperaOpcaoMenu() {
 		System.out.print("Digita a opcao do menu: ");
@@ -19,7 +16,14 @@ public class AbstractAula implements IAulas {
 		String opcaoMenu = scanner.nextLine();
 		return opcaoMenu;
 	}
-
+	
+	@Override
+	public void executar(IExercicio exercicio) {
+		
+		exercicio.executarExercicio();
+		
+	}
+	
 	@Override
 	public void retornarMenuPrincipal() {
 		App app = new App();

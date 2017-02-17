@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class Funcionario {
 	private double salario=100;
-	private Date dataEntradaBanco;
+	private Data dataEntradaBanco;
 	private String RG;
 	private String nome;
 	
@@ -24,7 +24,7 @@ public class Funcionario {
 		super();
 	}
 	
-	public Funcionario(String nome, double salario, Date dataEntradaBanco, String rG) {
+	public Funcionario(String nome, double salario, Data dataEntradaBanco, String rG) {
 		super();
 		this.salario = salario;
 		this.dataEntradaBanco = dataEntradaBanco;
@@ -41,11 +41,11 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
-	public Date getDataEntradaBanco() {
+	public Data getDataEntradaBanco() {
 		return dataEntradaBanco;
 	}
 
-	public void setDataEntradaBanco(Date dataEntradaBanco) {
+	public void setDataEntradaBanco(Data dataEntradaBanco) {
 		this.dataEntradaBanco = dataEntradaBanco;
 	}
 
@@ -84,7 +84,7 @@ public class Funcionario {
 		
 		builder.append("Salario: R$"+this.salario+"\n");
 		builder.append("RG: "+this.RG+"\n");
-		builder.append("Data de Entrada no Banco: "+new SimpleDateFormat("dd/MM/yyyy").format(this.dataEntradaBanco)+"\n");
+		builder.append("Data de Entrada no Banco: "+this.dataEntradaBanco.toString()+"\n");
 		return builder.toString();
 	}
 	

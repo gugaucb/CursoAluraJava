@@ -2,14 +2,14 @@ package me.costa.gustavo.java1.aulas;
 
 import me.costa.gustavo.java1.main.App;
 
-public class AulaTres extends AbstractAula {
-
+public class AulaQuatro extends AbstractAula {
+	
 	
 	
 	@Override
 	public void gerarMenu() {
 		StringBuilder menu = new StringBuilder();
-		menu.append("==== Aula 3 ====\n");
+		menu.append("==== Aula 4 ====\n");
 		menu.append("1 - Exercicio 1\n");
 		menu.append("2 - Exercicio 2\n");
 		menu.append("3 - Exercicio 3\n");
@@ -30,10 +30,10 @@ public class AulaTres extends AbstractAula {
 	protected void executaExercicio(String opcaoMenu) {
 		switch (opcaoMenu) {
 		case "1":
-			executar(new me.costa.gustavo.java1.exercicios.aula3.Exercicio1());
+			executar(new me.costa.gustavo.java1.exercicios.aula4.Exercicio1());
 			break;
 		case "2":
-			executar(new me.costa.gustavo.java1.exercicios.aula3.Exercicio4());
+			
 			break;
 		case "3":
 			break;

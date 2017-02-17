@@ -1,6 +1,5 @@
 package me.costa.gustavo.java1.aulas;
 
-import me.costa.gustavo.java1.exercicios.IExercicio;
 import me.costa.gustavo.java1.exercicios.aula2.BalancoTrimestral;
 import me.costa.gustavo.java1.exercicios.aula2.Exercicio3;
 import me.costa.gustavo.java1.exercicios.aula2.Exercicio4;
@@ -31,7 +30,7 @@ public class AulaDois extends AbstractAula {
 		
 	}
 
-	private void executaExercicio(String opcaoMenu) {
+	protected void executaExercicio(String opcaoMenu) {
 		switch (opcaoMenu) {
 		case "1":
 			executar(new BalancoTrimestral());
@@ -72,11 +71,6 @@ public class AulaDois extends AbstractAula {
 
 	
 	
-	private void executar(IExercicio exercicio) {
-		
-		exercicio.executarExercicio();
-		
-	}
 	
 	
 	
