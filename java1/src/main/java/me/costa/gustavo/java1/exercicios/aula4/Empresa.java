@@ -48,4 +48,37 @@ public class Empresa {
 		this.nome = nome;
 	}
 
+	public String mostraEmpregados() {
+		Funcionario[] funcionarios = getFuncionarios();
+		String mensagem = new String();
+		for (int i = 0; i < funcionarios.length; i++) {
+			if(funcionarios[i]!=null){
+				mensagem+="Funcionário na posição: " + i+"\n";
+				mensagem+="R$" + funcionarios[i].getSalario();
+			}
+        }
+		System.out.println(mensagem);
+		return mensagem;
+	}
+
+	public String mostraTodasAsInformacoes() {
+		String retorno = new String();
+		for (Funcionario funcionario : funcionarios) {
+			if(funcionario!=null){
+				retorno+=funcionario.mostrar();
+			}
+		}
+		return retorno;
+	}
+
+	public boolean contem(Funcionario funcionario1) {
+		boolean retorno = false;
+		for (Funcionario funcionario : funcionarios) {
+			if(funcionario!=null && funcionario.equals(funcionario1)){
+				retorno = true;
+			}
+		}
+		return retorno;
+	}
+
 }

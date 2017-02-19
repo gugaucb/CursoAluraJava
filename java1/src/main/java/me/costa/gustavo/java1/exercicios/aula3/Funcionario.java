@@ -70,12 +70,14 @@ public class Funcionario {
 		return this.salario;
 	}
 	
-	public double calculaGanhoAnual(){
+	public double getGanhoAnual(){
 		return this.salario*12;
 	}
 	
-	public void mostrar(){
-		System.out.println(this.toString());
+	public String mostrar(){
+		String dadosFuncionario = this.toString();
+		System.out.println(dadosFuncionario);
+		return dadosFuncionario;
 	}
 	
 	@Override

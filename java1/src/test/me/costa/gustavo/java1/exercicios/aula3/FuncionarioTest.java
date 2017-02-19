@@ -19,7 +19,7 @@ public class FuncionarioTest {
 	@Test
 	public void testCalculaGanhoAnual() {
 		Funcionario funcionario = new Funcionario();
-		double ganhoAnual = funcionario.calculaGanhoAnual();
+		double ganhoAnual = funcionario.getGanhoAnual();
 		Assert.assertEquals(1200.0, ganhoAnual);
 	}
 
